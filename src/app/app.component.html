@@ -27,6 +27,13 @@
       </ul>
       <p appBetterHighlight [highlightBgColor] = "'red'" [highlightTextColor]="'blue'">Style me with dynamic Better Highlight Directive</p>
       <p appBetterHighlight>Style me with Better Highlight Directive</p>
+      <div [ngSwitch]="value">
+        <p *ngSwitchCase="5">value is 5</p>
+        <p *ngSwitchCase="10">value is 10</p>
+        <p *ngSwitchCase="100">value is 100</p>
+        <p *ngSwitchCase="200">value is 200</p>
+        <p *ngSwitchDefault>value is Default</p>
+      </div>
     </div>
   </div>
 </div>
