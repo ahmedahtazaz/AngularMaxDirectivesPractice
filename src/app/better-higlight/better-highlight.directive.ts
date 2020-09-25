@@ -1,4 +1,4 @@
-import { Directive, ElementRef, HostBinding, HostListener, OnInit } from '@angular/core';
+import { Directive, HostBinding, HostListener, OnInit } from '@angular/core';
 
 @Directive({
   selector: '[appBetterHighlight]'
@@ -8,7 +8,7 @@ export class BetterHighlightDirective implements OnInit {
   @HostBinding('style.backgroundColor') backgroundColor: string = 'transparent';
   @HostBinding('style.color') color: string = 'black';
 
-  constructor(private elementRef: ElementRef) { }
+  constructor() { }
   
   ngOnInit(): void {
     
